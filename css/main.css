@@ -1,3 +1,9 @@
 .hidden {
     display: none;
 }
+
+body {
+    background-image: url(../images/background.jpg);
+    margin:0px ;
+    border-style: double;
+}
