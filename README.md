@@ -7,7 +7,8 @@ Commit your changes: git commit -am 'Add some feature'
 Push to the branch: git push origin my-new-feature
 Submit a pull request :D
 # Credits
-TODO: Write credits
+Bhuvnish arora
+Estefania Aguilar
 
 # License
 MIT
