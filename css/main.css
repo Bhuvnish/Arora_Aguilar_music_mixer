@@ -3,11 +3,23 @@
 }
 
 
-#container{ background-image: url("../images/background.gif") ;
+#container{ background-image: url("../images/jerry.gif") ;
+     
+    background-size:cover;
     background-repeat: no-repeat;
-    background-size: cover;
 
-    background-blend-mode: multiply}
+    background-blend-mode: multiply;
+    text-align: center;
+    
+}
+#container h1{
+    font-size: 150px;
+    color: aliceblue;
+}
+#container p{
+    color: aliceblue;
+    font-size: 120px;
+}
     .puzzle-image {
       
        display: inline;
@@ -16,25 +28,55 @@
     }
 
     .puzzle-image:nth-child(even) {
-       
+      
         clear: both;
     }
     .puzzle-image:nth-child(odd) {
-       
+        
         clear: both;
     }
     .puzzle-pieces {
         margin-top: 40px;
-        height: 500px;
+        height: 400px;
         display: inline-block;
         border: medium solid #333;
         background-color: white;
         color: inherit;
         overflow: hidden;
+   
     }
     
-    .puzzle-pieces {
-        width: auto;
-        margin-right: 20px;
     
+  
+    .drop-zone {
+        width: 25%;
+        height: 49.5%;
+        /* border: thin dashed white; */
+        float: left;
+        position: relative;
     }
+    
+    .drop-zone img {
+        float: none;
+        padding: 0;
+        position: absolute;
+       
+    }
+    
+    
+    
+     .puzzle-board {
+        margin-top: 1200px;
+        margin-left: 2200px;
+        height: 300px;
+        width: 1900px;
+        display: block;
+        border: medium solid #333;
+        
+        color: inherit;
+        overflow: hidden;
+    }
+    
+  
+  
+      
