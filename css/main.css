@@ -8,57 +8,33 @@
     background-size: cover;
 
     background-blend-mode: multiply}
-
-
     .puzzle-image {
-        width: 40%;
       
+       display: inline;
         padding: 8px;
-        cursor: pointer;
-        display: flex;
+       cursor: pointer;
     }
-    .drop-zone {
-        width: 49.5%;
-        height: 49.5%;
-        /* border: thin dashed white; */
-        float: left;
-        position: relative;
+
+    .puzzle-image:nth-child(even) {
        
+        clear: both;
     }
-    
-   
-    
-    .dropzone {
-        width: 400px;
-        height: 200px;
-        border: 2px dashed #ccc;
-        text-align: center;
-        line-height: 200px;
-        font-size: 1.5em;
-        margin: 20px auto;
+    .puzzle-image:nth-child(odd) {
+       
+        clear: both;
     }
-    .dropzone:hover {
-        border-color: #333;
-    }
-    
-   
-  
-    
-    .puzzle-board{
+    .puzzle-pieces {
         margin-top: 40px;
-        height:auto;
+        height: 500px;
         display: inline-block;
         border: medium solid #333;
-        background-color: #000;
+        background-color: white;
         color: inherit;
         overflow: hidden;
-      
-
     }
-   
-
-body {
-    background-image: url(../images/background.jpg);
-    margin:0px ;
-    border-style: double;
-}
+    
+    .puzzle-pieces {
+        width: auto;
+        margin-right: 20px;
+    
+    }
