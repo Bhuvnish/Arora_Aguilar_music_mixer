@@ -3,22 +3,26 @@
 }
 
 
-#container{ background-image: url("../images/jerry.gif") ;
+#container{ background-image: url("../images/background.jpg") ;
      
     background-size:cover;
     background-repeat: no-repeat;
 
     background-blend-mode: multiply;
     text-align: center;
+    width: 1200px;
+    height: auto;
+    text-align: center;
     
 }
 #container h1{
-    font-size: 150px;
+    font-size: 50px;
     color: aliceblue;
+    text-align: center;
 }
 #container p{
     color: aliceblue;
-    font-size: 120px;
+    font-size: 20px;
 }
     .puzzle-image {
       
@@ -37,10 +41,10 @@
     }
     .puzzle-pieces {
         margin-top: 40px;
-        height: 400px;
+        height: auto;
         display: inline-block;
         border: medium solid #333;
-        background-color: white;
+        
         color: inherit;
         overflow: hidden;
    
@@ -49,7 +53,7 @@
     
   
     .drop-zone {
-        width: 25%;
+        width: 22%;
         height: 49.5%;
         /* border: thin dashed white; */
         float: left;
@@ -58,7 +62,7 @@
     
     .drop-zone img {
         float: none;
-        padding: 0;
+        padding: 0px;
         position: absolute;
        
     }
@@ -66,15 +70,18 @@
     
     
      .puzzle-board {
-        margin-top: 1200px;
-        margin-left: 2200px;
-        height: 300px;
-        width: 1900px;
+       
+        
+        height: 70px;
+        width: 450px;
         display: block;
-        border: medium solid #333;
+        border: medium solid white;
         
         color: inherit;
         overflow: hidden;
+        
+        margin-left: 400px;
+        margin-top: 300px;
     }
     
   
