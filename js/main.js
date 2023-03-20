@@ -12,9 +12,12 @@ let theButtons = document.querySelectorAll("#buttonHolder img"),
 	puzzlePieces = document.querySelectorAll(".puzzle-pieces img"),
 	dropZones = document.querySelectorAll('.drop-zone'),
 	mainBoard = document.querySelector('.puzzle-pieces'),
+
 	// store the dragged piece in a global variable
 	// because we need it in the handleDrop function
 	draggedPiece;
+	
+
 
 // step 3
 // functionality always goes in the middle -> how do we want
@@ -36,8 +39,13 @@ function changeBGImage() {
         piece.classList.remove("dropped");
         mainBoard.appendChild(piece);
     });
+	
+
+
 	puzzleBoard.style.backgroundImage = `url(images/backGround${this.id}.jpg)`;
 }
+
+
 
 
 
