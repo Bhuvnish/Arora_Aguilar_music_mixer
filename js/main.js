@@ -12,9 +12,12 @@ let theButtons = document.querySelectorAll("#buttonHolder img"),
 	puzzlePieces = document.querySelectorAll(".puzzle-pieces img"),
 	dropZones = document.querySelectorAll('.drop-zone'),
 	mainBoard = document.querySelector('.puzzle-pieces'),
+
 	// store the dragged piece in a global variable
 	// because we need it in the handleDrop function
 	draggedPiece;
+	
+
 
 // step 3
 // functionality always goes in the middle -> how do we want
@@ -36,8 +39,13 @@ function changeBGImage() {
         piece.classList.remove("dropped");
         mainBoard.appendChild(piece);
     });
+	
+
+
 	puzzleBoard.style.backgroundImage = `url(images/backGround${this.id}.jpg)`;
 }
+
+
 
 
 
@@ -102,4 +110,19 @@ dropZones.forEach(zone => zone.addEventListener("dragover", handleDragOver));
 dropZones.forEach(zone => zone.addEventListener("drop", handleDrop));
 
 // drum kit: press a key to play the sound. use JavaScript to retrieve the data-key attribute and then use that as a selector to find the matching audio file and play it!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
