@@ -7,12 +7,42 @@
     <title>Music Mixer</title>
     <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body id="container">
     <header id="headLine">
        <h1>Drag&Drop Music Mixer</h1> 
        <p>Choose an instrument and drop into the stars to listen the sound</p>
     </header>
-  < 
+
+    <main>
+        <section>
+        
+           <div class="puzzle-pieces">
+            <img data-trackref="drums" id="drums" src="images/drums.svg" class="puzzle-image">
+            <img data-trackref="guitar" id="guitar" src="images/guitar.svg" class="puzzle-image">
+            <img data-trackref="flute"  id="flute" src="images/flute.svg" class="puzzle-image">
+            <img data-trackref="piano"  id="piano" src="images/piano.svg" class="puzzle-image">
+           </div>
+            
+            <div class="puzzle-board">
+                <div  class="drop-zone"></div>
+                <div  class="drop-zone"></div>
+                <div  class="drop-zone"></div>
+                <div  class="drop-zone"></div>
+            </div>
+            
+            <audio src="audio/drums.mp3"></audio>
+    
+           
+
+        </section>
+
+<button id="play-button">Play</button>
+           <button id="pause-button">Pause</button>
+           <button id="stop-button">Stop</button>
+
+
+    </main>
+
 </body>
 <script src="js/main.js"></script>
 </html>
