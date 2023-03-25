@@ -5,11 +5,14 @@ let puzzlePieces = document.querySelectorAll(".puzzle-pieces img"),
 
     draggedPiece;
 
+let audioElements = {};
+
 function loadAudio() {
     let currentSrc = `audio/${this.dataset.trackref}.mp3`;
     let audioEl = new Audio();
     audioEl.src = currentSrc;
     audioEl.load();
+    audioElements[this.dataset.trackref] = audioEl;
     playAudio(audioEl);
 }
 
@@ -48,16 +51,42 @@ dropZones.forEach(zone => zone.addEventListener("drop", handleDrop));
 
 let playButton = document.querySelector('#play-button');
 playButton.addEventListener('click', function() {
-  playAudio(theAudioEl);
+    for (let key in audioElements) {
+        playAudio(audioElements[key]);
+    }
 });
 
 let pauseButton = document.querySelector('#pause-button');
 pauseButton.addEventListener('click', function() {
-  theAudioEl.pause();
+    for (let key in audioElements) {
+        audioElements[key].pause();
+    }
 });
 
 let stopButton = document.querySelector('#stop-button');
 stopButton.addEventListener('click', function() {
-  theAudioEl.pause();
-  theAudioEl.currentTime = 0;
+    for (let key in audioElements) {
+        audioElements[key].pause();
+        audioElements[key].currentTime = 0;
+    }
+});
+
+let instrumentAudio = document.querySelectorAll(".puzzle-pieces img");
+
+instrumentAudio.forEach(instrument => {
+    instrument.addEventListener("click", function() {
+        for (let key in audioElements) {
+            if (key !== this.dataset.trackref) {
+                audioElements[key].pause();
+            }
+        }
+
+        if (this.parentNode !== mainBoard) {
+            let parent = this.parentNode;
+            parent.removeChild(this);
+            mainBoard.appendChild(this);
+            audioElements[this.dataset.trackref].pause();
+            audioElements[this.dataset.trackref].currentTime = 0;
+        }
+    });
 });
