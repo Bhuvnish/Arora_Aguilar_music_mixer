@@ -15,23 +15,32 @@
 
     <main>
         <section>
-            <h2 class="hidden"id="junish"> instruments</h2>
-           <div class="puzzle-pieces" ><img src="images/drum.svg" class="puzzle-image"  height="50px" width="50px"></img>
-            <img src="images/flaute.svg " class="puzzle-image" height="50px" width="50px" ></img>
-            <img src="images/guitar.svg" class="puzzle-image"  height="50px" width="50px"></img>
-            <img src="images/piaano.svg" class="puzzle-image" height="50px" width="50px"></img>
+        
+           <div class="puzzle-pieces">
+            <img data-trackref="drums" id="drums" src="images/drums.svg" class="puzzle-image">
+            <img data-trackref="guitar" id="guitar" src="images/guitar.svg" class="puzzle-image">
+            <img data-trackref="flute"  id="flute" src="images/flute.svg" class="puzzle-image">
+            <img data-trackref="piano"  id="piano" src="images/piano.svg" class="puzzle-image">
            </div>
             
-            <div class="puzzle-board keys">
-                <div  class="drop-zone tl key"></div>
-                <div  class="drop-zone tr key"></div>
-                
-                <div   class="drop-zone bl key"></div>
-                <div  class="drop-zone br key"></div>
+            <div class="puzzle-board">
+                <div  class="drop-zone"></div>
+                <div  class="drop-zone"></div>
+                <div  class="drop-zone"></div>
+                <div  class="drop-zone"></div>
             </div>
             
-           <audio src="audio/guitar.mp3"></audio>
+            <audio src="audio/drums.mp3"></audio>
+    
+           
+
         </section>
+
+<button id="play-button">Play</button>
+           <button id="pause-button">Pause</button>
+           <button id="stop-button">Stop</button>
+
+
     </main>
 
 </body>

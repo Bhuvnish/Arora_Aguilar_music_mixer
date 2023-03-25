@@ -3,12 +3,7 @@
 }
 
 
-#container{ background-image: url("../images/background-2.gif") ;
-     
-    background-size:cover;
-    background-repeat: no-repeat;
-
-    background-blend-mode: multiply;
+#container{
     text-align: center;
     width: 1200px;
     height: auto;
@@ -16,8 +11,9 @@
     
 }
 #container h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 50px;
-    color: aliceblue;
+    color: rgb(19, 20, 20);
     text-align: center;
 }
 #container p{
@@ -25,7 +21,7 @@
     font-size: 20px;
 }
     .puzzle-image {
-      
+       width: 20%;
        display: inline;
         padding: 8px;
        cursor: pointer;
@@ -56,6 +52,7 @@
         width: 22%;
         height: 49.5%;
         /* border: thin dashed white; */
+        border: #333;
         float: left;
         position: relative;
     }
@@ -75,7 +72,7 @@
         height: 70px;
         width: 450px;
         display: block;
-        border: medium solid white;
+        border: medium solid rgb(158, 25, 25);
         
         color: inherit;
         overflow: hidden;
