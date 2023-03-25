@@ -17,7 +17,8 @@
     text-align: center;
 }
 #container p{
-    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(70, 89, 105);
     font-size: 20px;
 }
     .puzzle-image {
@@ -58,6 +59,7 @@
     }
     
     .drop-zone img {
+        width: 20%;
         float: none;
         padding: 0px;
         position: absolute;
@@ -68,7 +70,8 @@
     
      .puzzle-board {
        
-        
+        background-image: url(../images/drums.svg) ;
+        background-color: #946161;
         height: 70px;
         width: 450px;
         display: block;
