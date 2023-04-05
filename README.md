@@ -10,8 +10,8 @@ Drag an instrument into a Viking to complete the song.
 5. Submit a pull request :D
 
 ## Credits
-Estefania Aguilar
-Bhuvnish Arora
+1. Estefania Aguilar
+2. Bhuvnish Arora
 
 ## License
 MIT
